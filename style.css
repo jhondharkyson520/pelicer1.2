@@ -13,6 +13,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
 }
 
 i {
@@ -50,6 +51,23 @@ i {
   border: 1px solid #d34040;
   background-color: #d34040;
 }
+.contact-icons a:hover i {
+  animation: translateY 0.8s infinite alternate;
+  color: #d34040;
+}
+.contact-button {
+  border: 1px solid #FFF;
+  padding: 18px 100px;
+  border-radius: 4px;
+  color: #FFF;
+  background-color: #e96d6d;
+  transition: background-color 0.8s;
+}
+
+.contact-button:hover {
+  border: 1px solid #d34040;
+  background-color: #d34040;
+}
 
 .header-logo {
   display: flex;
@@ -76,11 +94,15 @@ i {
   .header-button {
     display: none;
   }
+
+  .contact-button{
+    padding: 15px 20px;
+  }
 }
 .container {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 8px;
+  padding: 0 10rem;
 }
 
 .bg-home {
@@ -91,7 +113,7 @@ i {
   content: "";
   display: block;
   position: absolute;
-  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../assets/bg.svg");
+  background-image: linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #06121e), url("../barber/assets/pelicer/Support/imgSupport.jpg");
   left: 0;
   top: 0;
   width: 100%;
@@ -146,6 +168,9 @@ i {
   }
 }
 @media screen and (max-width: 768px) {
+  .button-contact{
+
+  }
   .hero {
     min-height: 60vh;
   }
@@ -219,11 +244,19 @@ i {
   line-height: 150%;
   margin-bottom: 14px;
   text-align: center;
+  align-items: center;
   max-width: 780px;
+}
+.services-content{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .haircuts {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
   justify-content: center;
   align-items: center;
   gap: 16px;
@@ -253,6 +286,8 @@ i {
 .haircut-info {
   width: 100%;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   padding: 14px;
   background-color: #FFF;
@@ -262,15 +297,26 @@ i {
 .haircut-info button {
   color: #FFF;
   background-color: #d94140;
-  padding: 4px 8px;
+  padding: 10px 70px;
   border-radius: 4px;
   border: 0;
   cursor: default;
+  cursor: pointer;
+ 
+  font-size: 14px;
+  font-weight: 600;
+  margin: 14px 0;
+
+ 
 }
+
+.haircut-info button:hover {
+  animation: scaleButton 0.8s alternate infinite;}
 
 @media screen and (max-width: 768px) {
   .haircuts {
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr); 
+
   }
   .haircut img {
     max-width: 740px;
@@ -356,3 +402,114 @@ a {
   cursor: pointer;
   text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
+
+.check-icon {
+  color: #0D8784;
+  padding-right: 1rem;
+}
+.container-main {
+  position: relative;
+}
+.container-inicio {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+}
+.text-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  padding-top: 2rem;
+}
+.text-sobre {
+  padding-left: 15rem;
+  padding-right: 15rem;
+  font-size: 17px;
+  color: black;
+  text-align: center;
+}
+@media screen and (max-width: 910px) {
+  .text-sobre {
+      padding-left: 1rem;
+      padding-right: 1rem;
+  }
+}
+.text-vantagens {
+  font-size: 17px;
+  color: black;
+  padding-left: 7rem;
+  padding-right: 7rem;
+  padding-top: 1rem;
+}
+@media screen and (max-width: 910px) {
+  .text-vantagens {
+      padding-left: 2rem;
+      padding-right: 2rem;
+  }
+}
+
+.ContainerItems {
+    display: flex;
+    margin-top: 3rem;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+   
+  }
+
+  @media screen and (max-width: 910px) {
+    .ContainerItems{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);        
+      justify-content: center;
+      align-items: center;
+      gap: 3rem; 
+    }       
+}
+
+.ContainerIcons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    
+  }
+  @media screen and (max-width: 910px) {
+    .ContainerIcons{
+      justify-content: center;
+      align-items: center;
+    }
+}
+
+.TextDescriptionIcons {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.SearchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.SearchInput {
+    padding-right: 30px; 
+    width: 100%;
+    border-radius: 9px;
+    width: 500px;
+    height: 30px;
+    font-size: 20px;
+    padding-left: 0.5rem;
+
+    
+  }
+
+@media screen and (max-width: 910px) {
+    .SearchInput{
+      width: 280px;
+      height: 30px;
+    }
+}
