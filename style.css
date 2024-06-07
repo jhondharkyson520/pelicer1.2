@@ -299,7 +299,6 @@ i {
 
 .carousel img {
   width: 100%;
-  height: 230px;
   display: block;
 }
 
@@ -344,6 +343,9 @@ i {
   border-radius: 8px;
   box-shadow: 0px -1px 17px -4px rgba(0, 0, 0, 0.45);
   overflow: hidden;
+  height: 600px;
+  justify-content: center;
+  align-items: center;
 }
 .haircut img {
   width: 100%;
