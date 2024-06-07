@@ -161,6 +161,25 @@ i {
   animation: scaleButton 0.8s alternate infinite;
 }
 
+.button-siga-insta {
+  display: flex;
+  padding: 14px 28px;
+  color: #FFF;
+  background-color: #d94140;
+  border: 0;
+  border-radius: 5px;
+  gap: 20px;
+  font-weight: 600;
+  margin: 14px 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.button-siga-insta:hover {
+  animation: scaleButton 0.8s alternate infinite;
+}
+
 @keyframes scaleButton {
   from {
     transform: scale(1);
@@ -210,6 +229,7 @@ i {
 .about-content div {
   flex: 1;
 }
+
 
 .about-description h2 {
   font-size: 38px;
@@ -395,6 +415,7 @@ i {
   }
   .haircut img {
     max-width: 740px;
+    
   }
 }
 .footer {
@@ -508,6 +529,7 @@ a {
       padding-left: 1rem;
       padding-right: 1rem;
   }
+
 }
 .text-vantagens {
   font-size: 17px;
@@ -520,6 +542,10 @@ a {
   .text-vantagens {
       padding-left: 2rem;
       padding-right: 2rem;
+  }
+
+  .haircut{
+    height: auto;
   }
 }
 
@@ -573,6 +599,7 @@ a {
 .SearchInput {
     padding-right: 30px; 
     width: 100%;
+    border: none;
     border-radius: 9px;
     width: 500px;
     height: 50px;
@@ -585,7 +612,7 @@ a {
 @media screen and (max-width: 910px) {
     .SearchInput{
       width: 280px;
-      height: 30px;
+      height: 60px;
     }
 }
 
